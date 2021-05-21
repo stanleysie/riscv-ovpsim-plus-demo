@@ -44,7 +44,7 @@ project folder
 ```
 
 ## **Add an environment variable in PATH**
-This is used to run your program. You can opt to run it in **Linux (Ubuntu Terminal)** or **Windows (CMD)**.
+This is used to run your program. You can opt to run it in **Linux (Ubuntu Terminal)** or **Windows (CMD)**, just **add one** of the paths below.
 ```
 # For Linux
 path-to\imperas-riscv-tests\riscv-ovpsim-plus\bin\Linux64
