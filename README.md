@@ -7,7 +7,6 @@ This is a guide on how to setup and run your RISC-V Vector-based program with ri
 ## **Install Ubuntu from Microsoft Store**
 Link: **https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6**  
 *Takes several minutes and then asks you to set a username and a password.*
-<br /><br />
 ## **Clone the repository below**
 ```
 git clone https://github.com/Imperas/riscv-toolchains -b rvv-0.8.x
