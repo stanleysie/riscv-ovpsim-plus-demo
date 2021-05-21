@@ -17,7 +17,7 @@ This is used to compile your program. You need to run it in **Linux (Ubuntu Term
 path-to\riscv-toolchains\Linux64\sifive-riscv-none-gcc\bin
 ```
 ## **Download riscvOVPsimPlus**
-Download the riscvOVPsimPlus with base and test suites from OVPWorld website. Please take note that you might need to register to be able to download the test suites. Once you can see the download page, choose the **riscvOVPsimPlus with base and example configuration V Vector test suites**.<br /><br />
+Download the riscvOVPsimPlus with base and test suites from OVPWorld website. Please take note that you might need to register to be able to download the test suites. Once you can see the download page, choose the **riscvOVPsimPlus with base and example configuration V Vector test suites**.
 
 Once the file is downloaded, you will get a zip file. Extract the content, and copy the `imperas-riscv-tests` folder to your project folder.
 
