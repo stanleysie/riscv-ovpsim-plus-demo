@@ -2,17 +2,19 @@
 
 This is a guide on how to setup and run your RISC-V Vector-based program with riscvOVPsimPlus in your Windows devices. There are folders such as `imperas-riscv-tests` and `riscv-toolchains` which we didn't include in this repository due to its size. But, we provided a guide as to how you can obtain the two folders through the steps below.
 <br /><br />
+
 ## **Turn on Windows Subsystem for Linux (Reboot might be required)**
 ![alt text](https://mafft.cbrc.jp/alignment/software/TurnWindowsFeaturesOnOrOff.png?raw=true)
 ## **Install Ubuntu from Microsoft Store**
 Link: **https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6**  
 *Takes several minutes and then asks you to set a username and a password.*
-## **Clone the repository below**
+
+## **Clone the RISC-V  Toolchains Repository**
 ```
 git clone https://github.com/Imperas/riscv-toolchains -b rvv-0.8.x
 ```
 ## **Add an environment variable in PATH**
-This is used to compile your program. You need to run it in **Linux (Ubuntu Terminal)**.
+This is used to compile your program. You will compile your program in **Ubuntu Terminal**.
 ```
 path-to\riscv-toolchains\Linux64\sifive-riscv-none-gcc\bin
 ```
@@ -23,23 +25,25 @@ Once the file is downloaded, you will get a zip file. Extract the content, and c
 
 **Link: https://www.ovpworld.org/library/wikka.php?wakka=riscvOVPsimPlus**
 <br /><br />
+
 ## **Project Folder Structure**
 After copying the `imperas-riscv-tests` to your project folder, this is how the structure of your project folder should look like.
 ```
 project folder
 - imperas-riscv-tests
     - riscv-ovpsim-plus
-    - ...
+    ...
 - riscv-toolchains
     - Linux64
-    - ...
+    ...
 - compile.sh
 - compile_vsupport.sh
 - run.bat
 - run.sh
-- test.c
+- test.asm
 - vsupport.c
 - vsupport.h
+- vtest.c
 - windows-subsystem-for-linux.png
 ```
 
@@ -53,20 +57,26 @@ path-to\imperas-riscv-tests\riscv-ovpsim-plus\bin\Windows64
 ```
 
 ## **Compilation and Running**
-* Compile `vsupport.c` by running `compile_vsupport.h` in Ubuntu Terminal (*you only need to do this once*). This will generate for you the `vsupport.o` used to compile `test.c`.
-* Compile `test.c` by running `compile.sh` in Ubuntu Terminal. This will generate for you the `test.elf` which is used to run your program.
+* Compile `vsupport.c` by running `compile_vsupport.sh` in Ubuntu Terminal (*you only need to do this once*). This will generate for you the `vsupport.o` used to compile `vtest.c`.
+* Compile `vtest.c` by running `compile.sh` in Ubuntu Terminal. This will generate for you the `vtest.elf` which is used to run your program.
 * Run your program with `run.sh` in Ubuntu Terminal or `run.bat` in CMD.
 <br /><br />
 ## **Files Description**
-### **`test.c`**
+**`test.asm`**
+
+A sample RISC-V program to do a vector multiplication without RISC-V Vector Extension.
+
+**`vtest.c`**
+
 A sample C program to do a vector multiplication using the RISC-V Vector Extension.
+
 ### **`vsupport.c` and `vsupport.h`**
 Support files used for compilation and running your C program with RISC-V Vector Extension.
 ### **`compile_vsupport.sh`**
 This file is used to compile the `vsupport.c`.
 
 ### **`compile.sh`**
-This file is used to compile the `test.c`.
+This file is used to compile the `vtest.c`.
 
 ### **`run.sh` or `run.bat`**
 This file is used to run your program. Use `run.sh` if you want to run it in a **Linux (Ubuntu Terminal)**, and `run.bat` if you want to run in it **Windows (CMD)**.

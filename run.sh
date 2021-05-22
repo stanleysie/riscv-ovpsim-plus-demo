@@ -1,1 +1,1 @@
-riscvOVPsimPlus.exe --variant RV64GCV --program test.elf --override riscvOVPsim/cpu/vector_version=0.8
+riscvOVPsimPlus.exe --variant RV64GCV --program vtest.elf --override riscvOVPsim/cpu/vector_version=0.8
