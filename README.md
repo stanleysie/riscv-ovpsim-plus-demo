@@ -61,10 +61,6 @@ path-to\imperas-riscv-tests\riscv-ovpsim-plus\bin\Windows64
 * Run your program with `run.sh` in Ubuntu Terminal or `run.bat` in CMD.
 <br /><br />
 ## **Files Description**
-**`test.asm`**
-
-A sample RISC-V program to do a vector multiplication without RISC-V Vector Extension.
-
 **`vtest.c`**
 
 A sample C program to do a vector multiplication using the RISC-V Vector Extension.
