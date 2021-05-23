@@ -40,7 +40,6 @@ project folder
 - compile_vsupport.sh
 - run.bat
 - run.sh
-- test.asm
 - vsupport.c
 - vsupport.h
 - vtest.c
