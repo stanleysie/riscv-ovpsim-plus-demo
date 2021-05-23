@@ -61,17 +61,16 @@ path-to\imperas-riscv-tests\riscv-ovpsim-plus\bin\Windows64
 * Run your program with `run.sh` in Ubuntu Terminal or `run.bat` in CMD.
 <br /><br />
 ## **Files Description**
-**`vtest.c`**
-
+#### **`vtest.c`**
 A sample C program to do a vector multiplication using the RISC-V Vector Extension.
 
-### **`vsupport.c` and `vsupport.h`**
+#### **`vsupport.c` and `vsupport.h`**
 Support files used for compilation and running your C program with RISC-V Vector Extension.
-### **`compile_vsupport.sh`**
+#### **`compile_vsupport.sh`**
 This file is used to compile the `vsupport.c`.
 
-### **`compile.sh`**
+#### **`compile.sh`**
 This file is used to compile the `vtest.c`.
 
-### **`run.sh` or `run.bat`**
+#### **`run.sh` and `run.bat`**
 This file is used to run your program. Use `run.sh` if you want to run it in a **Linux (Ubuntu Terminal)**, and `run.bat` if you want to run in it **Windows (CMD)**.
