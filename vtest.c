@@ -14,7 +14,7 @@ void vvmulint32(int n, v512P x, v512P y, v512P z) {
         "    add     %1, %1, t0       \n" // # Bump pointer
         "    vlw.v   v1, (%2)         \n" // # Get second vector
         "    add     %2, %2, t0       \n" // # Bump pointer
-        "    vmul.vv v2, v0, v1       \n" // # Sum vectors
+        "    vmul.vv v2, v0, v1       \n" // # Multiply vectors
         "    vsw.v   v2, (%3)         \n" // # Store result
         "    add     %3, %3, t0       \n" // # Bump pointer
         "    bnez    %0, 1b           \n" // # Loop back
