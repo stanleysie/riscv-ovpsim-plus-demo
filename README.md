@@ -16,8 +16,6 @@ sudo apt-get install gcc make
 ```
 git clone https://github.com/Imperas/riscv-toolchains -b rvv-0.8.x
 ```
-## **Edit Makefile (Optional)**
-
 ## **Add an environment variable in PATH**
 This is used to compile your program. You will compile your program in **Ubuntu Terminal**.
 ```
